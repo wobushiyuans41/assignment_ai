@@ -14,7 +14,7 @@ Evaluate your model.
 # load data
 import pandas as pd
 
-data = pd.read_csv('assignment_ai//train.csv')
+data = pd.read_csv('train.csv')
 df = data.copy()
 df.sample(10)
 # %%

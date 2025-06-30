@@ -14,7 +14,7 @@ Evaluate your model.
 # load data
 import pandas as pd
 
-data = pd.read_csv('data//train.csv')
+data = pd.read_csv('assignment_ai//train.csv')
 df = data.copy()
 df.sample(10)
 # %%
@@ -54,7 +54,7 @@ from sklearn.svm import SVC
 
 models = dict()
 models['SVM'] = SVC(kernel='rbf')   # kernel specifies the kernel type, 'rbf' is the radial basis function
-models['KNeighbor'] = KNeighborsClassifier(n_neighbors=5)  # n_neighbors specifies the number of neighbors
+models['KNeighbor'] = KNeighborsClassifier(n_neighbors=10)  # n_neighbors specifies the number of neighbors
 models['RandomForest'] = RandomForestClassifier(n_estimators=100)  # n_estimators specifies the number of trees in the forest
 # define functions to evaluate the models
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
